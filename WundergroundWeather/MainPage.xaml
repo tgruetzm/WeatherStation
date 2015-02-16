@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="WeatherStation.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WundergroundWeather"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="32,547,0,0" VerticalAlignment="Top" Click="Update_Click"/>
+        <TextBox Name="NearbyTextBox" HorizontalAlignment="Left" Margin="23,23,0,0" TextWrapping="Wrap" Text="nearby" VerticalAlignment="Top"/>
+        <Button Content="Find stations" HorizontalAlignment="Left" Margin="121,13,0,0" VerticalAlignment="Top" Click="FindStations_Click"/>
+        <ListView Name="Stations" HorizontalAlignment="Left" Height="450" Margin="10,87,0,0" VerticalAlignment="Top" Width="380" SelectionChanged="Stations_SelectionChanged"/>
+    </Grid>
+</Page>
